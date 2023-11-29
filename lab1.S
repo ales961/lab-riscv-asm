@@ -49,8 +49,8 @@ addi t3, x0, 0 # row element number
 cycle:
 lw t6, 0(a4) # load value from array
 addi a4, a4, 4 # increment array pointer
-lw t2, 0(a5)
-bge t6, t2, skip # find min
+lw t5, 0(a5)
+bge t6, t5, skip # find min
 sw t6, 0(a5)
 skip:
 addi t3, t3, 1
